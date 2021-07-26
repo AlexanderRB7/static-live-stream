@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1><strong>Hello {{name}}!</strong></h1>
+    <h2><strong>Livestream</strong></h2>
+    <p></strong></p>
+    <div class="container">
+       <img src="https://static-live-stream.ngrok.io/video_feed" width="50%" alt="Error: Stream Not Live">
+       <br><br>
+       <a class='btn btn-secondary' href="{{url_for('index')}}" role="button">Back</a>
+   </div>
+{% endblock %}

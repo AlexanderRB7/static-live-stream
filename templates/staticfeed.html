@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 style="font: bold 48px Helvetica, Arial, sans-serif">Hello {{name}}!</h1>
+    <h2 style="font: bold 38px Helvetica, Arial, sans-serif">Learn about polar bears!</h2>
+    <p></p>
+    <br>
+    <video controls>
+      <source src="./static/polar.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <br><br>
+    <a class='btn btn-secondary' href="{{url_for('index')}}" role="button">Back</a>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1 style="font: bold 48px Helvetica, Arial, sans-serif;"><strong>Welcome, {{name}}!</strong></h1>
+<p style="font: bold 60px Helvetica, Arial, sans-serif height:10000px,vertical-align: middle;"><strong>Which would you like to see?</strong></p>
+  <a class="btn btn-secondary" href="{{url_for('static_feed')}}" role="button">Static Feed</a>
+  <br><br>
+  <a class="btn btn-secondary" href="{{url_for('live_feed')}}" role="button">Live Feed</a>
+
+{% endblock %}
